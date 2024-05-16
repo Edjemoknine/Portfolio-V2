@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Spacing from "@/components/Spacing";
+import Status from "@/components/Status";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,6 +10,8 @@ export default function Home() {
       <Header />
       <Spacing size="md" />
       <Hero />
+      <Spacing size="md" />
+      <Status />
     </main>
   );
 }
