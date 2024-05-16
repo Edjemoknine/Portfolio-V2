@@ -13,13 +13,16 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { Badge } from "./ui/badge";
+import ContactCard from "./ContactCard";
+import Project from "./Project";
+import { Work } from "./Work";
 
 const Status = () => {
   return (
     <Sections className="w-full flex max-md:flex-col items-start gap-4">
       <div className="flex-[3] w-full">
         <Card className="w-full p-4 space-y-1">
-          <p className="text-sm text-muted-foreground">Selected Projects</p>
+          <p className="text-lg text-muted-foreground">Selected Projects</p>
           <div className="flex flex-col gap-4">
             {SIDEPROJECTS.map((project) => (
               <Project
@@ -35,7 +38,7 @@ const Status = () => {
       </div>
       <div className="flex-[2] w-full space-y-4 h-full  ">
         <Card className="p-4 flex-1">
-          <p className="text-sm text-muted-foreground">Work</p>
+          <p className="text-lg text-muted-foreground">Work</p>
           <div className="flex flex-col gap-4">
             {WORKS.map((work) => (
               <Work
@@ -51,14 +54,16 @@ const Status = () => {
           </div>
         </Card>
         <Card className="p-4 flex-1 space-y-2">
-          <p className="text-sm text-muted-foreground">Contact me</p>
+          <p className="text-lg text-muted-foreground">Contact me</p>
           <ContactCard
+            url="https://twitter.com/Moknine8"
             name="@Moknine8 "
             image="https://mk-portfolio-psi.vercel.app/assets/mok-9SYK2rEW.jpg"
             mediumImg="https://imgs.search.brave.com/TDgu_cz9I26MyeLNkxtVfTIfcKI-oJn5pn01FkecRq8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/dmVjdGV1cnMtbGli/cmUvYXBwbGljYXRp/b24tdHdpdHRlci1u/b3V2ZWF1LWxvZ28t/eC1mb25kLW5vaXJf/MTAxNy00NTQyNS5q/cGc_c2l6ZT02MjYm/ZXh0PWpwZw"
             description="1200"
           />
           <ContactCard
+            url="https://www.linkedin.com/in/mokenineelhadj/"
             name="Mokine Elhadj "
             image="https://mk-portfolio-psi.vercel.app/assets/mok-9SYK2rEW.jpg"
             mediumImg="https://imgs.search.brave.com/0onedxgdJWLsAOrzVTbco23TxXLuDJGb_uBUL74bc7k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2NhL0xpbmtlZElu/X2xvZ29faW5pdGlh/bHMucG5n"
@@ -71,45 +76,6 @@ const Status = () => {
 };
 
 export default Status;
-
-const ContactCard = ({
-  image,
-  mediumImg,
-  name,
-  description,
-}: {
-  image: string;
-  mediumImg: string;
-  name: string;
-  description: string;
-}) => {
-  return (
-    <Card className="p-3 bg-accent/10 group flex items-center gap-4 hover:bg-accent/30 transition-colors">
-      <div className="relative">
-        <img
-          src={image}
-          alt="iamge"
-          className="h-10 w-10 rounded-full object-contain"
-        />
-        <img
-          src={mediumImg}
-          alt="mediumImage"
-          className="h-4 w-4 object-contain absolute -bottom-2 -right-2 rounded"
-        />
-      </div>
-      <div className="mr-auto ">
-        <div className="flex items-center gap-2">
-          <p className="text-lg font-semibold">{name}</p>
-        </div>
-        <p className="text-xs text-muted-foreground">{description}</p>
-      </div>
-      <ArrowUpRight
-        size={16}
-        className="group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform mr-4"
-      />
-    </Card>
-  );
-};
 
 const WORKS = [
   {
@@ -142,43 +108,6 @@ const WORKS = [
   },
 ];
 
-const Work = (props: {
-  img: string;
-  title: string;
-  role: string;
-  date: string;
-  url: string;
-  mission: string;
-}) => {
-  return (
-    <Link
-      href={props.url}
-      className="inline-flex items-center gap-3 hover:bg-accent/50 p-1 rounded transition-colors"
-    >
-      {/* <span className="bg-accent text-accent-foreground p-3 rounded-sm"> */}
-      <Image
-        width={200}
-        height={200}
-        src={props.img}
-        alt={props.title}
-        className="w-10 h-10 object-contain rounded-sm relative"
-      />
-      {/* </span> */}
-      <div>
-        <div className=" font-semibold">
-          {props.title}{" "}
-          <Badge className="text-[10px] hover:bg-sky-500/5 bg-sky-500/10 text-sky-500">
-            {props.mission}
-          </Badge>
-        </div>
-        <p className="text-xs text-muted-foreground">{props.role}</p>
-      </div>
-      <div className="ml-auto">
-        <p className="text-xs text-muted-foreground">{props.date}</p>
-      </div>
-    </Link>
-  );
-};
 const SIDEPROJECTS = [
   {
     logo: Home,
@@ -201,30 +130,18 @@ const SIDEPROJECTS = [
     description: "Lorem ipsum dolor sit amet, consectetur elit,",
   },
   {
+    logo: Code,
+    title: "Github",
+    description: "Lorem ipsum dolor sit amet, consectetur a elit,",
+  },
+  {
     logo: Rss,
     title: "Rss",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing ",
   },
+  {
+    logo: Podcast,
+    title: "Podcast",
+    description: "Lorem ipsum dolor sit amet, consectetur elit,",
+  },
 ];
-
-const Project = (props: {
-  logo: LucideIcon;
-  title: string;
-  description: string;
-  url: string;
-}) => {
-  return (
-    <Link
-      href={props.url}
-      className="inline-flex items-center gap-3 hover:bg-accent/50 p-1 rounded transition-colors"
-    >
-      <span className="bg-accent text-accent-foreground p-3 rounded-sm">
-        <props.logo />
-      </span>
-      <div>
-        <div className="text-lg font-semibold">{props.title}</div>
-        <p className="text-sm text-muted-foreground">{props.description}</p>
-      </div>
-    </Link>
-  );
-};
