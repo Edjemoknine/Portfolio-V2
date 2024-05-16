@@ -81,29 +81,29 @@ const WORKS = [
   {
     img: "https://media.licdn.com/dms/image/D4E0BAQFBVjTMODudkQ/company-logo_100_100/0/1684225310834/movico_b_v__logo?e=1723680000&v=beta&t=zRNth76uOXmrvzKqm-3GZcUd_qEsCgvJwP5H-WgJ838",
     role: "Frontend Developer",
-    title: "Framer",
+    title: "Movico",
     date: "2022 - 2023",
-    mission: "Internship",
+    mission: "Project",
   },
   {
     img: "https://media.licdn.com/dms/image/C4D0BAQF4LkzIX5am5Q/company-logo_100_100/0/1638865980476?e=1723680000&v=beta&t=-QBrolHanvzjsHwzWal95dyGocAL35ba_BTXMNBbdfQ",
     role: "Web Developer",
     date: "2023 - 2024",
-    title: "Open source Africa",
-    mission: "Internship",
+    title: "MarkoDown",
+    mission: "Volonture",
   },
   {
     img: "https://media.licdn.com/dms/image/C4E0BAQExT428Seh0Nw/company-logo_100_100/0/1645050163163?e=1723680000&v=beta&t=MN333t729LE10t0W6qrrSzLezAIVkUkWvFkjugqbdaM",
     role: "Software Engineer",
     date: "2024 - present",
-    title: "CodeSoft",
-    mission: "Internship",
+    title: "Open source Africa",
+    mission: "Volonture",
   },
   {
     img: "https://media.licdn.com/dms/image/D560BAQHDmIfYA5sY7w/company-logo_200_200/0/1685777115831?e=1723680000&v=beta&t=lUt33075mTQGUoJFULO4aw6EOpg9gyD8pptuSY_F-2k",
     role: "FullStack Developer",
     date: "2024 - present",
-    title: "Code",
+    title: "CodeSof",
     mission: "Internship",
   },
 ];
@@ -111,37 +111,39 @@ const WORKS = [
 const SIDEPROJECTS = [
   {
     logo: Home,
-    title: "Github",
-    description: "Lorem ipsum dolor sit amet, consectetur ading elit, ",
+    title: "Movico",
+    description: "Pltaform stream tha latest movies and Tv shows.",
   },
   {
     logo: Code,
-    title: "Github",
-    description: "Lorem ipsum dolor sit amet, consectetur a elit,",
+    title: "Wearox",
+    description: "Ecommerce Store sells the trend clothes and shoes .",
   },
   {
     logo: PowerIcon,
-    title: "Github",
-    description: "Lorem ipsum dolor sit amet, consectetur acelit, ",
+    title: "Cv Builder",
+    description: "Sass platform serve creating profissional resume .",
   },
   {
     logo: Podcast,
-    title: "Podcast",
-    description: "Lorem ipsum dolor sit amet, consectetur elit,",
+    title: "Burger King",
+    description: "Resturant web application buy and make reservation online .",
   },
   {
     logo: Code,
-    title: "Github",
-    description: "Lorem ipsum dolor sit amet, consectetur a elit,",
+    title: "Latest",
+    description: "Blog display tha latest news and articles in the world .",
   },
   {
     logo: Rss,
-    title: "Rss",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing ",
+    title: "Cryptox",
+    description:
+      "Cryptocorrencies platform that show deals and the market in the crypto world .",
   },
   {
     logo: Podcast,
-    title: "Podcast",
-    description: "Lorem ipsum dolor sit amet, consectetur elit,",
+    title: "Cyborg",
+    description:
+      "Gmaes platform that dispaly the latest games and thier news .",
   },
 ];
