@@ -1,5 +1,14 @@
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Spacing from "@/components/Spacing";
 import Image from "next/image";
 
 export default function Home() {
-  return <main className=" min-h-screen p-24 text-red-400">Hello</main>;
+  return (
+    <main>
+      <Header />
+      <Spacing size="md" />
+      <Hero />
+    </main>
+  );
 }

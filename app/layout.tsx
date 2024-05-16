@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Anek_Telugu } from "next/font/google";
 import "./globals.css";
 import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import { cn } from "@/lib/utils";
+
 const anek = Anek_Telugu({ subsets: ["latin"], variable: "--font-caption" });
 
 export const metadata: Metadata = {
@@ -21,7 +23,8 @@ export default function RootLayout({
       <body
         className={cn(
           GeistSans.variable,
-          anek,
+          GeistMono.variable,
+          anek.variable,
           "font-sans h-full bg-background text-foreground"
         )}
       >
