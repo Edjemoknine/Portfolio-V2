@@ -1,7 +1,15 @@
 import React from "react";
 import Sections from "./Sections";
 import { Card } from "./ui/card";
-import { Code, Home, LucideIcon, Podcast, PowerIcon, Rss } from "lucide-react";
+import {
+  ArrowUpRight,
+  Code,
+  Home,
+  LucideIcon,
+  Podcast,
+  PowerIcon,
+  Rss,
+} from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { Badge } from "./ui/badge";
@@ -12,7 +20,7 @@ const Status = () => {
       <div className="flex-[3] w-full">
         <Card className="w-full p-4 space-y-1">
           <p className="text-sm text-muted-foreground">Selected Projects</p>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-4">
             {SIDEPROJECTS.map((project) => (
               <Project
                 key={project.title}
@@ -28,7 +36,7 @@ const Status = () => {
       <div className="flex-[2] w-full space-y-4 h-full  ">
         <Card className="p-4 flex-1">
           <p className="text-sm text-muted-foreground">Work</p>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-4">
             {WORKS.map((work) => (
               <Work
                 key={work.role}
@@ -42,13 +50,66 @@ const Status = () => {
             ))}
           </div>
         </Card>
-        <Card className="p-4 flex-1">contact me</Card>
+        <Card className="p-4 flex-1 space-y-2">
+          <p className="text-sm text-muted-foreground">Contact me</p>
+          <ContactCard
+            name="@Moknine8 "
+            image="https://mk-portfolio-psi.vercel.app/assets/mok-9SYK2rEW.jpg"
+            mediumImg="https://imgs.search.brave.com/TDgu_cz9I26MyeLNkxtVfTIfcKI-oJn5pn01FkecRq8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/dmVjdGV1cnMtbGli/cmUvYXBwbGljYXRp/b24tdHdpdHRlci1u/b3V2ZWF1LWxvZ28t/eC1mb25kLW5vaXJf/MTAxNy00NTQyNS5q/cGc_c2l6ZT02MjYm/ZXh0PWpwZw"
+            description="1200"
+          />
+          <ContactCard
+            name="Mokine Elhadj "
+            image="https://mk-portfolio-psi.vercel.app/assets/mok-9SYK2rEW.jpg"
+            mediumImg="https://imgs.search.brave.com/0onedxgdJWLsAOrzVTbco23TxXLuDJGb_uBUL74bc7k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2NhL0xpbmtlZElu/X2xvZ29faW5pdGlh/bHMucG5n"
+            description="400"
+          />
+        </Card>
       </div>
     </Sections>
   );
 };
 
 export default Status;
+
+const ContactCard = ({
+  image,
+  mediumImg,
+  name,
+  description,
+}: {
+  image: string;
+  mediumImg: string;
+  name: string;
+  description: string;
+}) => {
+  return (
+    <Card className="p-3 bg-accent/10 group flex items-center gap-4 hover:bg-accent/30 transition-colors">
+      <div className="relative">
+        <img
+          src={image}
+          alt="iamge"
+          className="h-10 w-10 rounded-full object-contain"
+        />
+        <img
+          src={mediumImg}
+          alt="mediumImage"
+          className="h-4 w-4 object-contain absolute -bottom-2 -right-2 rounded"
+        />
+      </div>
+      <div className="mr-auto ">
+        <div className="flex items-center gap-2">
+          <p className="text-lg font-semibold">{name}</p>
+        </div>
+        <p className="text-xs text-muted-foreground">{description}</p>
+      </div>
+      <ArrowUpRight
+        size={16}
+        className="group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform mr-4"
+      />
+    </Card>
+  );
+};
 
 const WORKS = [
   {
@@ -110,7 +171,7 @@ const Work = (props: {
             {props.mission}
           </Badge>
         </div>
-        <p className="text-sm text-muted-foreground">{props.role}</p>
+        <p className="text-xs text-muted-foreground">{props.role}</p>
       </div>
       <div className="ml-auto">
         <p className="text-xs text-muted-foreground">{props.date}</p>
