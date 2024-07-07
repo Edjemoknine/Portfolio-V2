@@ -6,6 +6,9 @@ const nextConfig = {
         protocol: "https",
         hostname: "media.licdn.com",
       },
+      {
+        hostname: "mk-portfolio-psi.vercel.app",
+      },
     ],
   },
 };

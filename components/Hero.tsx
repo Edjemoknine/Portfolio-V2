@@ -3,6 +3,7 @@ import Sections from "./Sections";
 import ReactIcon from "./icons/ReactIcon";
 import { cn } from "@/lib/utils";
 import FigmaIcon from "./icons/FigmaIcon";
+import Image from "next/image";
 export const Code = ({
   className,
   ...props
@@ -19,7 +20,7 @@ export const Code = ({
 };
 const Hero = () => {
   return (
-    <Sections className="flex max-md:flex-col items-start gap-4">
+    <Sections className="flex max-md:flex-col justify-between items-start gap-4">
       <div className="flex-[3] space-y-1">
         <h2 className="font-caption text-5xl text-primary">Mokenine Elhadj</h2>
         <h3 className="text-3xl font-caption">Software developer </h3>
@@ -38,10 +39,12 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex-[2] m-auto">
-        <img
+        <Image
+          width={200}
+          height={200}
           src="https://mk-portfolio-psi.vercel.app/assets/mok-9SYK2rEW.jpg"
           alt="profile"
-          className="w-full h-auto rounded-full max-w-xs"
+          className="md:w-64 h-auto  rounded-full max-w-xs"
         />
       </div>
     </Sections>

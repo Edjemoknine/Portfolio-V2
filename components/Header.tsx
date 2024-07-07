@@ -11,8 +11,14 @@ const Header = () => {
   return (
     <header className="sticky top-0 py-4">
       <Sections className="flex items-baseline">
-        <h1 className="text-lg font-bold text-primary">Mokenine Elhadj</h1>
-        <div className="flex-1" />
+        <Link href="/" className="text-lg font-bold text-primary">
+          Mokenine Elhadj
+        </Link>
+        <div className="flex-1 flex justify-center text-sm gap-5 items-center">
+          <Link href={"/about"}>About</Link>
+          <Link href={"/projects"}>Projects</Link>
+          <Link href={"/blogs"}>Blogs</Link>
+        </div>
         <ul className="flex items-center gap-2">
           <Link
             target="_blank"

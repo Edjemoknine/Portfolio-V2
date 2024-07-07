@@ -4,6 +4,7 @@ import "./globals.css";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { cn } from "@/lib/utils";
+import Header from "@/components/Header";
 
 const anek = Anek_Telugu({ subsets: ["latin"], variable: "--font-caption" });
 
@@ -28,6 +29,7 @@ export default function RootLayout({
           "font-sans h-full bg-background text-foreground"
         )}
       >
+        <Header />
         {children}
       </body>
     </html>
