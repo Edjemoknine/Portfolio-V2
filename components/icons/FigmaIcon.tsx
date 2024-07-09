@@ -8,11 +8,11 @@ const FigmaIcon = (
       <svg
         width={props.size}
         height={props.size}
+        {...props}
         viewBox="0 0 256 384"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="xMidYMid"
-        {...props}
       >
         <g>
           <path

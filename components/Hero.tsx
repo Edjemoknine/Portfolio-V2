@@ -22,8 +22,10 @@ const Hero = () => {
   return (
     <Sections className="flex max-md:flex-col justify-between items-start gap-4">
       <div className="flex-[3] space-y-1">
-        <h2 className="font-caption text-5xl text-primary">Mokenine Elhadj</h2>
-        <h3 className="text-3xl font-caption">Software developer </h3>
+        <h2 className="font-caption text-2xl font-extrabold text-primary">
+          Mokenine Elhadj
+        </h2>
+        <h3 className="text-3xl font-caption italic">Software developer </h3>
         <div className="leading-7">
           I like bring ideas to live using{" "}
           <Code className="inline-flex items-center gap-1">

@@ -27,52 +27,59 @@ const Projects = () => {
     <Sections className="">
       <Spacing size="md" />
 
-      <Card className="w-full p-4 space-y-3">
-        <p className="text-lg text-muted-foreground">Selected Projects</p>
-        <div className="grid grid-cols-2 gap-4">
-          {projects.map((project) => (
-            <Card
-              className="w-full rounded-lg overflow-hidden"
-              key={project.name}
-            >
-              <CardHeader className="p-0 mb-3">
-                <Image
-                  src={project.image}
-                  width={1000}
-                  height={1000}
-                  alt={project.name}
-                  className="w-full h-full object-contain"
-                />
-              </CardHeader>
-              <CardContent>
-                <h4>{project.name}</h4>
-              </CardContent>
-              <CardFooter className="space-x-3">
-                <Link
-                  target="_blank"
-                  href={project.github}
-                  className={cn(
-                    buttonVariants({ variant: "outline" }),
-                    "size-6 p-0"
-                  )}
-                >
-                  <GitubIcon size={12} className="text-foreground" />
-                </Link>
-                <Link
-                  target="_blank"
-                  href={project.github}
-                  className={cn(
-                    buttonVariants({ variant: "outline" }),
-                    "size-6 p-0"
-                  )}
-                >
-                  <Earth size={12} className="text-foreground" />
-                </Link>
-              </CardFooter>
-            </Card>
-          ))}
-        </div>
-      </Card>
+      {/* <Card className="w-full p-4 space-y-3"> */}
+      <h2 className=" pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+        Projects
+      </h2>
+      <p className="mb-6">
+        I create applications and tools to be profitable and help people with my
+        skills.
+      </p>
+      {/* <p className="text-lg text-muted-foreground">Selected Projects</p> */}
+      <div className="grid grid-cols-2 gap-4">
+        {projects.map((project) => (
+          <Card
+            className="w-full rounded-lg overflow-hidden"
+            key={project.name}
+          >
+            <CardHeader className="p-0 mb-3">
+              <Image
+                src={project.image}
+                width={1000}
+                height={1000}
+                alt={project.name}
+                className="w-full h-full object-contain"
+              />
+            </CardHeader>
+            <CardContent>
+              <h4>{project.name}</h4>
+            </CardContent>
+            <CardFooter className="space-x-3">
+              <Link
+                target="_blank"
+                href={project.github}
+                className={cn(
+                  buttonVariants({ variant: "outline" }),
+                  "size-6 p-0"
+                )}
+              >
+                <GitubIcon size={12} className="text-foreground" />
+              </Link>
+              <Link
+                target="_blank"
+                href={project.github}
+                className={cn(
+                  buttonVariants({ variant: "outline" }),
+                  "size-6 p-0"
+                )}
+              >
+                <Earth size={12} className="text-foreground" />
+              </Link>
+            </CardFooter>
+          </Card>
+        ))}
+      </div>
+      {/* </Card> */}
     </Sections>
   );
 };
