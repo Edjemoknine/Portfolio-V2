@@ -23,14 +23,10 @@ import Typescript from "../icons/Typescript";
 Expo;
 
 export const stacks = [
-  {
-    name: "Expo",
-    icon: Expo,
-  },
-  {
-    name: "Graphql",
-    icon: Graphql,
-  },
+  // {
+  //   name: "Graphql",
+  //   icon: Graphql,
+  // },
   {
     name: "JavaScript",
     icon: Javascript,
@@ -40,8 +36,20 @@ export const stacks = [
     icon: Typescript,
   },
   {
-    name: "Jest",
-    icon: Jest,
+    name: "React",
+    icon: ReactIcon,
+  },
+  {
+    name: "Tailwindcss",
+    icon: TailwindcssIcon,
+  },
+  {
+    name: "Redux-toolkit",
+    icon: ReduxIcon,
+  },
+  {
+    name: "Next Js",
+    icon: NextJsIcon,
   },
   {
     name: "MongoDB",
@@ -52,41 +60,37 @@ export const stacks = [
     icon: Noen,
   },
   {
-    name: "Next Js",
-    icon: NextJsIcon,
+    name: "Expo",
+    icon: Expo,
   },
   {
     name: "Prisma ORM",
     icon: Prisma,
   },
   {
-    name: "React",
-    icon: ReactIcon,
+    name: "Jest",
+    icon: Jest,
   },
   {
     name: "Redis",
     icon: Redis,
   },
-  {
-    name: "Tanstck Query",
-    icon: Query,
-  },
-  {
-    name: "Redux-toolkit",
-    icon: ReduxIcon,
-  },
-  {
-    name: "Stripe",
-    icon: Stripe,
-  },
+  // {
+  //   name: "Tanstck Query",
+  //   icon: Query,
+  // },
+  // {
+  //   name: "Stripe",
+  //   icon: Stripe,
+  // },
   {
     name: "Supabase",
     icon: Supabase,
   },
-  {
-    name: "Svelte",
-    icon: Svelte,
-  },
+  // {
+  //   name: "Svelte",
+  //   icon: Svelte,
+  // },
   {
     name: "Three Js",
     icon: Three,
@@ -98,9 +102,5 @@ export const stacks = [
   {
     name: "Framer Motion",
     icon: Framer,
-  },
-  {
-    name: "Tailwindcss",
-    icon: TailwindcssIcon,
   },
 ];

@@ -9,6 +9,9 @@ const nextConfig = {
       {
         hostname: "mk-portfolio-psi.vercel.app",
       },
+      {
+        hostname: "avatar.vercel.sh",
+      },
     ],
   },
 };
