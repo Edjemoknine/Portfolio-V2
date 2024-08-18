@@ -16,8 +16,6 @@ export default function Home() {
       <Skills />
       <Spacing size="md" />
       <Contact />
-      <Spacing size="md" />
-      <Footer />
     </main>
   );
 }

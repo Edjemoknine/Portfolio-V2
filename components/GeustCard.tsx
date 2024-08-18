@@ -9,13 +9,13 @@ const GeustCard = () => {
     <div className="grid grid-cols-1 mt-16 gap-4">
       {/* <div className="col-span-1 text-primary font-semibold">Geustbook</div> */}
       <div className="col-span-4 flex flex-wrap gap-4">
-        <p>
+        {/* <p>
           Welcome to my Guestbook! I’d love to hear your thoughts about my work
           or just say hello. Drop a message below!
         </p>
         <br />
-        <br />
-        <Card className="relative md:h-72 bg-[linear-gradient(110deg,#333_0.6%,#222)] p-4     w-full rounded-xl   dark:border-neutral-600">
+        <br /> */}
+        <Card className="relative md:h-72 bg-gradient-to-r from-gray-900/[.1] to-gray-50/[.1] p-4     w-full rounded-xl   dark:border-neutral-600">
           <BackgroundBeams />
           <div className="flex justify-between items-center">
             <h3 className="font-bold text-2xl">Share Your Feedback</h3>
@@ -40,8 +40,6 @@ const GeustCard = () => {
         <div className="flex justify-end w-full">
           <Button type="submit">Login</Button>
         </div>
-
-        <Card></Card>
       </div>
     </div>
   );
