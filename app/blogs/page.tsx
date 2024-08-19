@@ -59,8 +59,8 @@ const Blogs = () => {
         />
         <Button type="submit">Login</Button>
       </div> */}
-      <GeustCard />
-      <MarqueeDemo />
+      {/* <GeustCard />
+      <MarqueeDemo /> */}
     </Sections>
   );
 };

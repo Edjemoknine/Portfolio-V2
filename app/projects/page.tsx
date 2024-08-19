@@ -52,10 +52,10 @@ const Projects = () => {
         skills.
       </p>
       {/* <p className="text-lg text-muted-foreground">Selected Projects</p> */}
-      <div className="grid grid-cols-1 gap-10">
+      <div className="grid grid-cols-1 gap-10 list  ">
         {projects.map((project) => (
-          <div key={project.name} className="grid grid-cols-5 gap-6">
-            <Card className="w-full rounded-lg overflow-hidden col-span-2">
+          <div key={project.name} className="item grid md:grid-cols-5 gap-6">
+            <Card className="w-full rounded-lg overflow-hidden md:col-span-2">
               <Link target="_blank" href={project.demo}>
                 <div className=" h-full mb-3 ">
                   <Image
@@ -69,7 +69,7 @@ const Projects = () => {
               </Link>
             </Card>
 
-            <div className="col-span-3 pt-1">
+            <div className="md:col-span-3 pt-1">
               <h3 className=" text-primary font-semibold mb-2">
                 {project.name} . 2023
               </h3>

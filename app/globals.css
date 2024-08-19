@@ -52,3 +52,7 @@ body {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE/Edge */
 }
+
+.list:hover .item:not(:hover) {
+  filter: grayscale(1) blur(5px);
+}
