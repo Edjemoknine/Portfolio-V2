@@ -21,7 +21,7 @@ const Blogs = () => {
       <p className="mb-6">Just a quick glimpse.</p>
       <div className="pb-6">
         <LinkHover
-          href="#"
+          href="/blogs/1"
           Img="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
           title="About"
           subtitle="this section it's about me"
@@ -33,7 +33,7 @@ const Blogs = () => {
           subtitle="this section it's about me"
         />
         <LinkHover
-          href="#"
+          href="/"
           Img="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
           title="About"
           subtitle="this section it's about me"
