@@ -79,32 +79,32 @@ export default Status;
 
 const WORKS = [
   {
-    img: "https://media.licdn.com/dms/image/D4E0BAQFBVjTMODudkQ/company-logo_100_100/0/1684225310834/movico_b_v__logo?e=1723680000&v=beta&t=zRNth76uOXmrvzKqm-3GZcUd_qEsCgvJwP5H-WgJ838",
+    img: "https://media.licdn.com/dms/image/v2/C4E0BAQEV0ZE0epI1fg/company-logo_200_200/company-logo_200_200/0/1632737175469?e=1735171200&v=beta&t=rGKnluccMY0a8hfEnjY3P4jijiZZD8RuFh_hkJ7wlSU",
     role: "Frontend Developer",
-    title: "Movico",
-    date: "2022 - 2023",
-    mission: "Project",
+    title: "Deeplyfe.inc",
+    date: "2024 - present",
+    mission: "Remote",
   },
   {
-    img: "https://media.licdn.com/dms/image/C4D0BAQF4LkzIX5am5Q/company-logo_100_100/0/1638865980476?e=1723680000&v=beta&t=-QBrolHanvzjsHwzWal95dyGocAL35ba_BTXMNBbdfQ",
+    img: "https://media.licdn.com/dms/image/v2/C4D0BAQF4LkzIX5am5Q/company-logo_200_200/company-logo_200_200/0/1638865980476?e=1735171200&v=beta&t=Z4ryju_rxnGvS5KHDdVPcTXFqlIB1Ek7COVpzpJKmxk",
     role: "Web Developer",
     date: "2023 - 2024",
     title: "MarkoDown",
     mission: "Volonture",
   },
   {
-    img: "https://media.licdn.com/dms/image/C4E0BAQExT428Seh0Nw/company-logo_100_100/0/1645050163163?e=1723680000&v=beta&t=MN333t729LE10t0W6qrrSzLezAIVkUkWvFkjugqbdaM",
+    img: "https://media.licdn.com/dms/image/v2/C4E0BAQExT428Seh0Nw/company-logo_200_200/company-logo_200_200/0/1645050163163?e=1735171200&v=beta&t=fghmIQgbax0pjvu4c4811_DbkdsFB9LKS6QRf5TDc80",
     role: "Software Engineer",
     date: "2024 - present",
-    title: "Open source Africa",
+    title: "All in Open source",
     mission: "Volonture",
   },
   {
-    img: "https://media.licdn.com/dms/image/D560BAQHDmIfYA5sY7w/company-logo_200_200/0/1685777115831?e=1723680000&v=beta&t=lUt33075mTQGUoJFULO4aw6EOpg9gyD8pptuSY_F-2k",
+    img: "https://mk-portfolio-psi.vercel.app/assets/teal_logo-CxRSjuZu.png",
     role: "FullStack Developer",
     date: "2024 - present",
-    title: "CodeSof",
-    mission: "Internship",
+    title: "Freelancer",
+    mission: "Free",
   },
 ];
 

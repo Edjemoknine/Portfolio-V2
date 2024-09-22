@@ -23,11 +23,15 @@ const ContactCard = ({
         <div className="relative">
           <Image
             src={image}
+            width={100}
+            height={100}
             alt="iamge"
             className="h-10 w-10 rounded-full object-contain"
           />
           <Image
             src={mediumImg}
+            width={100}
+            height={100}
             alt="mediumImage"
             className="h-4 w-4 object-contain absolute -bottom-2 -right-2 rounded"
           />

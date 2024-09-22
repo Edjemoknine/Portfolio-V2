@@ -12,6 +12,9 @@ const nextConfig = {
       {
         hostname: "avatar.vercel.sh",
       },
+      {
+        hostname: "imgs.search.brave.com",
+      },
     ],
   },
 };

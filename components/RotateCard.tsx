@@ -9,6 +9,8 @@ const RotateCard = ({ src, rotate }: { src: string; rotate: string }) => {
         <div className="absolute inset-0">
           <Image
             src={src}
+            width={100}
+            height={100}
             alt=""
             className="object-cover w-full h-full rounded-xl"
           />
