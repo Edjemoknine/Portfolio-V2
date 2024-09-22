@@ -11,7 +11,7 @@ const Next = (props: ComponentPropsWithoutRef<"svg"> & { size?: number }) => {
     >
       <mask
         id="mask0_408_139"
-        style="mask-type:alpha"
+        style={{ maskType: "alpha" }}
         maskUnits="userSpaceOnUse"
         x="0"
         y="0"
