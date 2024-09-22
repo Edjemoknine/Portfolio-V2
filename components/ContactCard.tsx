@@ -2,6 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import React from "react";
 import { Card } from "./ui/card";
 import Link from "next/link";
+import Image from "next/image";
 
 const ContactCard = ({
   image,
@@ -20,12 +21,12 @@ const ContactCard = ({
     <Link href={url}>
       <Card className="p-3 bg-accent/10 group flex-1 flex items-center gap-4 hover:bg-accent/30 transition-colors">
         <div className="relative">
-          <img
+          <Image
             src={image}
             alt="iamge"
             className="h-10 w-10 rounded-full object-contain"
           />
-          <img
+          <Image
             src={mediumImg}
             alt="mediumImage"
             className="h-4 w-4 object-contain absolute -bottom-2 -right-2 rounded"

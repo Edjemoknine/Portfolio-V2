@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import React from "react";
 
 const RotateCard = ({ src, rotate }: { src: string; rotate: string }) => {
@@ -6,7 +7,7 @@ const RotateCard = ({ src, rotate }: { src: string; rotate: string }) => {
     <div className={cn("h-64 w-52 group -ml-3 [perspective:1000px] ", rotate)}>
       <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] ">
         <div className="absolute inset-0">
-          <img
+          <Image
             src={src}
             alt=""
             className="object-cover w-full h-full rounded-xl"

@@ -13,7 +13,7 @@ export function BackgroundBeamsDemo() {
         <p></p>
         <p className="text-neutral-500 max-w-lg mx-auto my-2 text-sm text-center relative z-10">
           A monthly newsletter where I share my learnings and links to anything
-          I've found interesting. I don’t usually share this stuff anywhere else
+          I&apos;ve found interesting. I don&apos;t usually share this stuff anywhere else
           but in this newsletter.
         </p>
         <div className="flex items-center gap-2 mt-4">

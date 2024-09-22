@@ -29,7 +29,7 @@ const GeustCard = () => {
           </div>
           <br />
           <p>
-            Hi dude 👋 ,I'm glad to have you here. <br /> I'm excited to share
+            Hi dude 👋, I&apos;m glad to have you here. <br /> I&apos;m excited to share
             my work with you. Your feedback is essential as I aim to enhance and
             progress in my career. If you have a moment, please log in and
             provide your thoughts on my projects and presentations. Your
