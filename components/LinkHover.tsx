@@ -33,9 +33,9 @@ const LinkHover = ({ href, Img, title, subtitle }: Props) => {
   const ref = useRef(null);
   const x = useMotionValue(0);
   const y = useMotionValue(0);
-
-  const handleMouseMove = (e: any) => {
-    const rect = ref.current?.getBoundingClientRect();
+  const handleMouseMove = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const rect = (ref.current as HTMLElement | null)?.getBoundingClientRect();
+    if (!rect) return;
     const width = rect.width;
     const height = rect.height;
 
